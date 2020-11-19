@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/typescript-login/static/css/main.35e65528.chunk.css",
+    "main.js": "/typescript-login/static/js/main.fa0d2016.chunk.js",
+    "main.js.map": "/typescript-login/static/js/main.fa0d2016.chunk.js.map",
+    "runtime-main.js": "/typescript-login/static/js/runtime-main.7024cf41.js",
+    "runtime-main.js.map": "/typescript-login/static/js/runtime-main.7024cf41.js.map",
+    "static/css/2.83342f34.chunk.css": "/typescript-login/static/css/2.83342f34.chunk.css",
+    "static/js/2.4434de97.chunk.js": "/typescript-login/static/js/2.4434de97.chunk.js",
+    "static/js/2.4434de97.chunk.js.map": "/typescript-login/static/js/2.4434de97.chunk.js.map",
+    "index.html": "/typescript-login/index.html",
+    "static/css/2.83342f34.chunk.css.map": "/typescript-login/static/css/2.83342f34.chunk.css.map",
+    "static/css/main.35e65528.chunk.css.map": "/typescript-login/static/css/main.35e65528.chunk.css.map",
+    "static/js/2.4434de97.chunk.js.LICENSE.txt": "/typescript-login/static/js/2.4434de97.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7024cf41.js",
+    "static/css/2.83342f34.chunk.css",
+    "static/js/2.4434de97.chunk.js",
+    "static/css/main.35e65528.chunk.css",
+    "static/js/main.fa0d2016.chunk.js"
+  ]
+}
