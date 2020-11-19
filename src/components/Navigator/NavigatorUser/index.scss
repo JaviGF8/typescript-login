@@ -1,0 +1,11 @@
+@import '../../../styles/constants.scss';
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    font-size: $font-sm;
+    color: rgba($black, .5);
+  }
+}

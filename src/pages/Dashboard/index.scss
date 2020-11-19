@@ -1,0 +1,24 @@
+@import '../../styles/constants.scss';
+
+.dashboard-page {
+  display: flex;
+
+  > *:not(.loading) {
+    margin: $size-md;
+    width: calc(50% - 16px);
+    border: 1px solid $secondary-lighter;
+    border-radius: $size-sm;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    flex-direction: column;
+    > * {
+      width: calc(100% - 16px);
+    }
+  }
+
+  .loading {
+    font-size: $font-xl;
+  }
+}

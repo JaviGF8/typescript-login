@@ -1,0 +1,19 @@
+@import '../../../styles/constants.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  .page-header {
+    padding: 0 $size-xl;
+    background-color: $primary-light;
+
+    > h2 {
+      padding: $size-lg 0;
+    }
+  }
+
+  .page-content {
+    padding: $size-xl;
+  }
+}

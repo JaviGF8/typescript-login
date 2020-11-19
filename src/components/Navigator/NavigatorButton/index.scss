@@ -1,0 +1,15 @@
+@import '../../../styles/constants.scss';
+
+.navigator-btn, .custom-btn.btn-primary.navigator-btn {
+  padding: $size-md $size-xl;
+  text-decoration: none;
+  color: rgba($black, .5);
+  transition: ease-in-out all .2s;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: $font-lg;
+
+  &.selected-btn, &:hover {
+    background-color: rgba($primary-lighter, .5);
+  }
+}

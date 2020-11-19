@@ -1,0 +1,103 @@
+@import '../../styles/constants.scss';
+
+.navigator {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-height: 100vh;
+
+  .navigator-topbar {
+    padding: 0 $size-xl;
+    width: calc(100vw - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+
+    .expand-btn {
+      display: none;
+    }
+
+    h1 {
+      font-size: $font-xl;
+    }
+
+    .user-info {
+      font-size: $font-lg;
+      align-items: flex-end;
+    }
+  }
+  .navigator-content {
+    display: flex;
+
+    .navigator-sidebar {
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+    }
+
+    .navigator-children {
+      overflow: auto;
+      border-radius: $size-md 0 0 0;
+      height: calc(100vh - 70px);
+      flex: 1;
+      -webkit-box-shadow: inset 0px 0px $size-md $size-xs rgba($primary-darker, .15);
+      -moz-box-shadow: inset 0px 0px $size-md $size-xs rgba($primary-darker, .15);
+      box-shadow: inset 0px 0px $size-md $size-xs rgba($primary-darker, .15);
+    }
+
+  }
+  @media screen and (max-width: $screen-lg) {
+    .navigator-topbar {
+      padding: 0 $size-xl 0 $size-xxl;
+      width: calc(100vw - 96px);
+
+      .expand-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        left: $size-md;
+        width: $size-xl;
+        height: $size-lg;
+        padding: 0;
+        background-color: transparent;
+
+        > div {
+          height: $size-xs;
+          width: 100%;
+          background-color: $primary;
+        }
+      }
+    }
+    .navigator-content {
+      .navigator-sidebar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        > .navigator-btn {
+          font-size: 0;
+          padding: 0 $size-lg;
+          background-color: $white;
+        }
+
+        &.expanded {
+          > .navigator-btn {
+            font-size: $font-lg;
+            padding: $size-lg;
+
+            &.selected-btn {
+              background-color: $primary;
+            }
+          }
+        }
+      }
+
+      .navigator-children {
+        border-radius: 0;
+      }
+    }
+  }
+}

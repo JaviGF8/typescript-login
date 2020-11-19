@@ -1,0 +1,20 @@
+@import '../../styles/constants.scss';
+
+.settings-page {
+  display: flex;
+  flex-direction: column;
+
+  .setting-element {
+    margin-bottom: $size-lg;
+    padding: $size-lg;
+    border: 1px solid $secondary-lighter;
+    border-radius: $size-sm;
+    strong {
+      margin-left: $size-md;
+    }
+  }
+
+  .loading {
+    font-size: $font-xl;
+  }
+}

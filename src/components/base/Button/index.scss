@@ -1,0 +1,68 @@
+@import '../../../styles/constants.scss';
+
+.custom-btn {
+  align-items: center;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  font-size: $font-md;
+  justify-content: center;
+  outline: none;
+  padding: $size-lg $size-xl;
+  position: relative;
+  transition: .2s all ease-in-out;
+
+  .loading {
+    margin-left: $size-md;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    background-color: transparent;
+    transition: .2s all ease-in-out;
+  }
+  
+  &:hover, &:focus {
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 0;
+      background-color: rgba($white, 0.25);
+    }
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+    color: $white;
+  }
+  
+  &.btn-primary-inverted {
+    color: $primary;
+    background-color: $white;
+  }
+  
+  &.btn-secondary {
+    background-color: $secondary;
+    color: $white;
+  }
+  
+  &.btn-secondary-inverted {
+    color: $secondary;
+    background-color: $white;
+  }
+}

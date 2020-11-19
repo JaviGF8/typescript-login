@@ -1,0 +1,29 @@
+@import '../../styles/constants.scss';
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: $size-lg $size-xl;
+  background-color: $white;
+  border-radius: $size-sm;
+  max-width: 400px;
+  width: calc(100% - 128px);
+
+  > * {
+    margin: $size-lg 0;
+  }
+
+  > h2 {
+    padding-bottom: $size-lg;
+    margin-bottom: $size-md;
+    border-bottom: 1px solid rgba($black, 0.15);
+  }
+
+  .login-form-fields {
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin: 0;
+    }
+  }
+}
