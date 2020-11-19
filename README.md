@@ -2,6 +2,10 @@
 
 Typescript login is a project created by Javier Garcia using react, typescript and firebase.
 
+It's also deployed in GitHub Pages:
+
+`https://javigf8.github.io/typescript-login/`
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development.
