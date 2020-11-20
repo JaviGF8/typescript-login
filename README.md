@@ -42,8 +42,8 @@ npm start
 
 There are two users created in the firebase database:
 
-- admin@test.com [pass: test12]
-- test@test.com [pass: test12]
+- admin@test.com [pass: Test12]
+- test@test.com [pass: Test12]
 
 ## Built With
 
